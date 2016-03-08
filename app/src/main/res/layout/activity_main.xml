@@ -9,8 +9,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="eng.devdevelop.com.devdevelopapp.MainActivity">
 
-    <TextView
+
+
+
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/imageCamera"
+
+        android:src="@drawable/camera_icon_selector"
+        android:alpha="0.9"
+        android:onClick="GotoCameraActivity"
+        android:elevation="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp" />
+
 </RelativeLayout>

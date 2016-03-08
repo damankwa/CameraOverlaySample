@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- inherit from the material theme -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">#03a9f4</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">#29b6f6</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">#00bcd4</item>
+    </style>
+
+</resources>
