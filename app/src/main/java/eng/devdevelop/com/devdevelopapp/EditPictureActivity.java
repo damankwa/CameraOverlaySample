@@ -78,7 +78,7 @@ public class EditPictureActivity extends Activity {
                 bmp = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageFileUri), null, bmpFactoryOptions);
 
                 //rotates image by 90because by default it saves image as landscape
-                // Bitmap scaledBitmap = BitmapUtil.getRotatedAndScaledBitmap(bmp);
+                Bitmap rotatedBitmap = BitmapUtil.getRotatedAndScaledBitmap(bmp,90,widthpxtodp,heightpxtodp);
 
                 iv = new ImageView(this);
                 iv.setDrawingCacheEnabled(true);
@@ -87,7 +87,7 @@ public class EditPictureActivity extends Activity {
                 iv.setLayoutParams(layoutParams);
                 iv.setAdjustViewBounds(true);
                 iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                iv.setImageBitmap(bmp);
+                iv.setImageBitmap(rotatedBitmap);
 
 
                 editpreview.addView(iv);
